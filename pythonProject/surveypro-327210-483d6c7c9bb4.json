@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "surveypro-327210",
+  "private_key_id": "483d6c7c9bb49676711ab80d06d06446aca99578",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC6IYsYPmuRjTqp\nv0jOfdKYZVD3G8QLlnv+NUxKTS94nTDQ217ERLYuLVfVeIA3OVd/QQMVlNuytLea\nHo9m9v9hO+Uwki89t5qryFcAdxVBr37bgM6kpnVjtU+YtCvpl2KHKxX0uhvQgyDm\nxPxkjXn3Sabr9Y7gFAzczxBVfstTLshWo352Mp9/ZXIbst2xq5wb38BWh5MElKxS\nbxNqp9TD6r6h0hFzvg9Rt1aTf+S4XXSe+89nCxUHehmsLmSJ4hogt8W4jY/IEfeh\nUsCjAHUgx1zOW4rCrP8kenpfOW5WLpkyKVECULX2ypTVOucYUzHsinSMXyIwIesA\nG8vssYbzAgMBAAECggEAW8tpLtax9EGDee3FeVjiQJhO+t9tqw1XL0KX0lkInWJg\njdByhzcf5dwk4jmgehvEhBTK8ZzNUPABUHfb3zrXLdv9JxwhQj3HgQq3pZoVGKT1\nWknHH7qcUEU98SCCO5yWUfU0ydHzH71bv5PMqcaALS3cragYA3i/8zIHazKyEd46\nCmJsGnneLgn5pF/NxcUykgp/3P/4Ec7D/GoZXq4OsbexnGRXRJ/7Pqry7yF6KlMp\ntr22Ey9/rqdIkS+izF4QlZjPRizCSw+phnUVT3zvK9+f+kpJTIuvNjjmVh2leYxT\nVwhB3xQ7OdwSM/Gyq1AXYxs9xA9+SLTmYAKBIo77eQKBgQD8Ufq7dOfs7GZWbkjx\nFWhcnbsMqgj+0avamsA/6x3k/iWKLyY64WA9hCShk/Zt2Hp4qxcgzjFDK/Kbq9lk\nB8m0L5XxpiY84Vh8zPSHEoTGpvaijPpao4PuabRRUNR2ALHOHGnvfdAVL0OWgnhc\niLitfuq/qnoFFn4a6vuLMmL2pwKBgQC82HNz3R5urhVkIb1DWggD9cRPPsfFqhlh\nuDR6q8eUSsDUg3qhaMgZNaO9RkewldGraNAjOFOXXvqbkKKHRrlWEFwXzPS7y2Qd\njF+Wyuk7u35/Y/t/09gUZcUWMHoGrzaH8IxHQBmMMXRQ+VyLI5nUoU7xF438JCQd\n+1h2vMsC1QKBgQDGHZBjk91u+Ac6ogl/0jFJV0fBH9lES1lGoe+FwJSOcscDAxZf\ncQriAlnIzKbXhPxUtvHH/l5LwbwSYxKkKkFDy4FOZgjsEHwsMblmPTIn0H0jENKa\nTH2Qu0qr9m174fu6PDEprH2vxJarHPJopalsAJVNvQtl501I0WyE1SFDTQKBgEDR\nzvcjG9IDwOXoysz2dy/cyPAmbW3EkAfBsYm1ssCM1Blds9b5X01/4t8R44OSOTCr\nvl2IdPDNMhn5kD/8n5sR7Hpi6FIZYxjdWOYqadoN5kKVr/rVXSLLN9YA97GZrI8G\nmy/Nqbc8Nl+g6An+Q0v/vlf0rNCyGw+LeXbwIIKtAoGANPfXhwLL0vbdTAJ+mR1J\nIf0KZgGwvrz4fCAiF0FM6/dpbmGRAnU1r+fQBYwvskl/mNHvOukXAlgBIc6mm7FL\nMblwxZ2P6aStrQgizCwL0etEzFYXglYXnYClBnptEaD13ZxCk22Cvi6vnB/DPoHo\nEAgPViD2A7sc/gCARQVMOJU=\n-----END PRIVATE KEY-----\n",
+  "client_email": "bigquerypy@surveypro-327210.iam.gserviceaccount.com",
+  "client_id": "111972470990479641348",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/bigquerypy%40surveypro-327210.iam.gserviceaccount.com"
+}

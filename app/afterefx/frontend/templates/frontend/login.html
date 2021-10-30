@@ -1,0 +1,179 @@
+{% extends "frontend/baselogin.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="forms-container">
+    
+    <div class="signin-signup">
+        
+        <form asp-action="Login" asp-controller="Account" method="post" class="sign-in-form">
+            <div class="logo mr-auto" style="float: right;  margin-bottom: 70px; margin-left: 60%;">
+                <a href="{% url 'front-home'%}"><img width="100" height="70" src="{% static 'img/grey-outline_gray-N-Orange.png' %}" alt="" class="img-fluid"></a>
+            </div>
+            
+            <h2 class="title">Sign in</h2>
+
+            <div class="input-field">
+                <i class="fas fa-user"></i>
+                <input type="text" name="l_username" id="l_username" placeholder="Email" />
+            </div>
+            <div class="input-field">
+                <i class="fas fa-lock"></i>
+                <input type="password" name="l_password" id="l_password" placeholder="Password" />
+            </div>
+            <input type="submit" name="loginbtn" value="Login" onclick="return login()" class="btn solid" />
+            <div class="sent-message">{{ errormess }}</div>
+            <p class="social-text"></p>
+            
+
+        </form>
+        <form  method="post" class="sign-up-form">
+            <div class="logo mr-auto signupimg" style="float: left; ">
+                <a href="{% url 'front-home'%}"><img width="100" height="70" src="{% static 'img/grey-outline_gray-N-Orange.png' %}" alt="" class="img-fluid"></a>
+            </div>
+            <h2 class="title">Sign up</h2>
+            <div class="input-field">
+                <i class="fas fa-user"></i>
+                <input type="text" name="r_firstname" id="r_firstname" placeholder="Firstname" pattern="[a-zA-Z]+" oninvalid="setCustomValidity('Please enter on alphabets only. ')" />
+            </div>
+            <div class="input-field">
+                <i class="fas fa-user"></i>
+                <input type="text" name="r_lastname" id="r_lastname" placeholder="Lastname" pattern="[a-zA-Z]+" oninvalid="setCustomValidity('Please enter on alphabets only. ')" />
+            </div>
+            <div class="input-field">
+                <i class="fas fa-envelope"></i>
+                <input type="email" name="r_email" id="r_email" placeholder="Email" />
+            </div>
+            <div class="input-field">
+                <i class="fas fa-lock"></i>
+                <input type="password" name="r_password" id="r_password" placeholder="Password" />
+            </div>
+            <div class="input-field">
+                <i class="fas fa-lock"></i>
+                <input type="password" name="r_confirmpassword" id="r_confirmpassword" placeholder="Confirm Password" />
+            </div>
+            <input type="submit" name="registerbtn" id="registerbtn" onclick="return register()"  class="btn" value="Sign up" />
+            <div class="sent-message">{{ successmess }}</div>
+
+            
+
+            <!-- <p class="social-text">Or Sign up with social platforms</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div> -->
+        </form>
+    </div>
+</div>
+
+<div class="panels-container">
+    <div class="panel left-panel">
+        <div class="content">
+            <h3>New here ?</h3>
+            <p>
+                We are excited to see you here, please join our journey!
+            </p>
+            <button class="btn transparent" id="sign-up-btn">
+                Sign up
+            </button>
+        </div>
+        <img src="{% static 'img/log.svg'%}" class="image" alt="" />
+    </div>
+    <div class="panel right-panel">
+        <div class="content">
+            <h3>One of us ?</h3>
+            <p>
+                We are pleased to see you again!
+            </p>
+            <button class="btn transparent" id="sign-in-btn">
+                Sign in
+            </button>
+            
+        </div>
+        <img src="{% static 'img/register.svg'%}" class="image" alt="" />
+    </div>
+</div>
+
+
+    
+    
+<script>
+    function register() {
+        
+     var passone = document.getElementById('r_password').value;
+     
+     var emailone = document.getElementById('r_email').value;
+     
+     var passtwo = document.getElementById('r_confirmpassword').value;
+     var firstnameone = document.getElementById('r_firstname').value;
+     var lastnameone = document.getElementById('r_lastname').value;
+
+     if(passone.toString().replace(' ', '') == '' ||  passtwo.toString().replace(' ', '') == '' || emailone.toString().replace(' ', '') == ''
+        || firstnameone.toString().replace(' ', '') == '' || lastnameone.toString().replace(' ', '') == ''){
+            alert("Kindly enter all fields!");
+            return false;
+        }
+     
+     if(passone != passtwo){
+         alert('Password does not match!');
+         return false;
+     }
+
+     var pattern = /^[a-zA-Z0-9\-_]+(\.[a-zA-Z0-9\-_]+)*@[a-z0-9]+(\-[a-z0-9]+)*(\.[a-z0-9]+(\-[a-z0-9]+)*)*\.[a-z]{2,4}$/;
+    
+     if (pattern.test(emailone) == false) {
+        alert("Invalid Email address");
+        return false;
+    } 
+     
+      
+    }
+
+    function login() {
+        
+        var usernameone = document.getElementById('l_username').value;
+        
+        var passwordone = document.getElementById('l_password').value;
+        
+        
+        if(usernameone.toString().replace(' ', '') == '' ||  passwordone.toString().replace(' ', '') == '' ){
+            alert("Kindly enter all fields!");
+            return false;
+        }
+        
+        
+   
+        var pattern = /^[a-zA-Z0-9\-_]+(\.[a-zA-Z0-9\-_]+)*@[a-z0-9]+(\-[a-z0-9]+)*(\.[a-z0-9]+(\-[a-z0-9]+)*)*\.[a-z]{2,4}$/;
+       
+        if (pattern.test(usernameone) == false) {
+           alert("Invalid Email address");
+           return false;
+       } 
+        
+         
+       }
+
+    
+  </script>
+
+{% endblock content %}
+
+{% block js_scripts %}
+
+
+
+{% endblock %}
+
+
+

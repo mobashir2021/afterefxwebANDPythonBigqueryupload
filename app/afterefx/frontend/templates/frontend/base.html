@@ -1,0 +1,101 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Afterefx</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    
+
+    <!-- Favicons -->
+    <link href="{% static 'assets/img/favicon.png'%}" rel="icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css'%}" >
+    <link rel="stylesheet" type="text/css" href="{% static 'css/icofont.min.css'%}" >
+    <link rel="stylesheet" type="text/css" href="{% static 'css/boxicons.min.css'%}" >
+    <link rel="stylesheet" type="text/css" href="{% static 'css/owl.carousel.min.css'%}" >
+    <link rel="stylesheet" type="text/css" href="{% static 'css/venobox.css'%}" >
+    <link rel="stylesheet" type="text/css" href="{% static 'css/aos.css'%}" >
+    <!-- Template Main CSS File -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css'%}" >
+    <link rel="stylesheet" type="text/css" href="{% static 'css/custom.css'%}" >
+    
+    
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NKXNFG0H7M"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-NKXNFG0H7M');
+    </script>
+</head>
+<body>
+    
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top  header-transparent ">
+        <div class="container d-flex align-items-center">
+
+            <div class="logo mr-auto">
+                <a href="{% url 'front-home'%}"><img src="{% static 'img/grey-outline_gray-N-Orange.png' %}" alt="" class="img-fluid"></a>
+            </div>
+
+            <nav class="nav-menu d-none d-lg-block">
+                <ul>
+                    <li class="active"><a href="{% url 'front-home'%}">Home</a></li>
+                    <li><a href="{% url 'front-home' %}#features">Features</a></li>
+                    <li><a href="{% url 'front-home' %}#casestudy">Case Study</a></li>
+                    <li><a href="{% url 'front-home' %}#contact">Contact</a></li>
+                     <li class="get-started"><a href="{% url 'front-login' %}">Login/Signup</a></li> 
+                    <li class="get-started"><a href="{% url 'front-home' %}#contact">Request Demo</a></li>
+                </ul>
+            </nav>
+            <!-- .nav-menu -->
+
+        </div>
+    </header>
+    <!-- End Header -->
+
+
+    {% block content %}{% endblock %}
+
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" style="background-color:#fff;">
+
+        <div class="container py-4">
+            <div class="copyright">
+                &copy; Copyright <strong><span>Afterefx</span></strong>. All Rights Reserved
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a> -->
+
+    <!-- JS Files -->
+    <script type="text/javascript" src="{% static 'js/jquery.min.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/bootstrap.bundle.min.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.easing.min.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/owl.carousel.min.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/venobox.min.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/aos.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/main.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/product_hero_animation.bundled.js'%}"></script>
+    
+
+</body>
+</html>

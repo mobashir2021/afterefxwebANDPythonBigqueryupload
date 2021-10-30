@@ -1,0 +1,30 @@
+.backgroundcolor{
+    background-color: #23333A
+}
+
+.has-value.Select--single>.Select-control .Select-value .Select-value-label, .has-value.is-pseudo-focused.Select--single>.Select-control .Select-value .Select-value-label{
+
+  color: #A1A8AB;
+}
+
+.DateInput_input{
+    background-color: #23333A
+
+}
+
+.DateInput_input{
+
+    color: #A1A8AB
+}
+
+.circle {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    background: #23333A;
+    border: 23px solid #F28E2B;
+    color: #FFFFFF;
+    text-align: center;
+    font: 28px Arial, sans-serif;
+}

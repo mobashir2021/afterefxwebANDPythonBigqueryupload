@@ -1,0 +1,602 @@
+{% extends "frontend/base.html" %}
+{% load static %}
+
+{% block content %}
+
+{% if messages %}
+    {% for message in messages %}
+        {% if message.tags %}  
+            <script>alert("{{ message }}")</script> 
+        {% endif %}
+
+    {% endfor %}
+
+{% endif %}
+
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 d-lg-flex flex-lg-column justify-content-center align-items-stretch pt-5 pt-lg-0 order-2 order-lg-1" data-aos="fade-up">
+                <div class="bannerContainer">
+                    <h6>Enabling Data Science for Investors</h6>
+                    <h1>
+                        <span>Alternative Data for Unparalleled Returns</span>
+                    </h1>
+                    <h2>Afterefx empowers investment professionals in finding relationships in Big Data , to derive predictions allowing them to spot great investment opportunities before anybody else.</h2>
+                </div>
+            </div>
+            <div class="col-lg-6 d-lg-flex flex-lg-column align-items-stretch order-1 order-lg-2 hero-img" data-aos="fade-up">
+                
+                <iframe src="https://player.vimeo.com/video/502962951" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- End Hero -->
+
+<main id="main">
+    <!-- ======= Thoughtspot New ======= -->
+    <section id="hero2" class="d-flex align-items-center pt-0 pb-0">
+        <div class="container-fluid pl-0 pr-0">
+            <div class="main_content product_page">
+                <section class="block full_bleed pale_blue_background2 collapse_bottom">
+                    <div class="grid_container product_hero_animation">
+                        <div class="product_hero_logos left initialized" style="transform: translateX(125px);">
+                            <div class="first_row">
+                                <div class="logo" style="opacity: -0.916667;">
+                                    <img alt="Hadoop Logo" src="{% static 'img/thoughtspot_new/1.png'%}">
+                                </div>
+                                <div class="logo" style="opacity: 0.0833333;">
+                                    <img alt="IBM Logo" src="{% static 'img/thoughtspot_new/2.png'%}">
+                                </div>
+                                <div class="logo" style="opacity: 1;">
+                                    <img alt="AWS Logo" src="{% static 'img/thoughtspot_new/3.png'%}">
+                                </div>
+                                <div class="logo" style="opacity: 1;">
+                                    <img alt="Excel Logo" src="{% static 'img/thoughtspot_new/4.png'%}">
+                                </div>
+                                <div class="logo" style="opacity: 1;">
+                                    <img alt="Facebook Logo" src="{% static 'img/thoughtspot_new/5.png'%}">
+                                </div>
+                            </div>
+                            <div class="second_row">
+                                <div class="logo" style="opacity: -0.416667;">
+                                    <img alt="Oracle Logo" src="{% static 'img/thoughtspot_new/6.png'%}">
+                                </div>
+                                <div class="logo" style="opacity: 0.583333;">
+                                    <img alt="Salesforce Logo" src="{% static 'img/thoughtspot_new/7.png'%}">
+                                </div>
+                                <div class="logo" style="opacity: 1;">
+                                    <img alt="Jira Logo" src="{% static 'img/thoughtspot_new/8.png'%}">
+                                </div>
+                                <div class="logo" style="opacity: 1;">
+                                    <img alt="LinkedIn Logo" src="{% static 'img/thoughtspot_new/9.png'%}">
+                                </div>
+                                <div class="logo" style="opacity: 1;">
+                                    <img alt="Marketo Logo" src="{% static 'img/thoughtspot_new/10.png'%}">
+                                </div>
+                            </div>
+                            <div class="third_row">
+                                <div class="logo" style="opacity: -0.916667;">
+                                    <img alt="Twitter Logo" src="{% static 'img/thoughtspot_new/11.png'%}">
+                                </div>
+                                <div class="logo" style="opacity: 0.0833333;">
+                                    <img alt="Zendesk Logo" src="{% static 'img/thoughtspot_new/12.png'%}">
+                                </div>
+                                <div class="logo" style="opacity: 1;">
+                                    <img alt="SAP Logo" src="{% static 'img/thoughtspot_new/13.png'%}">
+                                </div>
+                                <div class="logo" style="opacity: 1;">
+                                    <img alt="SQL Logo" src="{% static 'img/thoughtspot_new/14.png'%}">
+                                </div>
+                                <div class="logo" style="opacity: 1;">
+                                    <img alt="Teradata Logo" src="{% static 'img/thoughtspot_new/15.png'%}">
+                                </div>
+                            </div>
+                            <div class="fourth_row">
+                                <div class="logo" style="opacity: -0.416667;"><img alt="Salesforce Logo" src="{% static 'img/thoughtspot_new/16.png'%}"></div>
+                                <div class="logo" style="opacity: 0.583333;"><img alt="IBM Logo" src="{% static 'img/thoughtspot_new/17.png'%}"></div>
+                                <div class="logo" style="opacity: 1;"><img alt="AWS Logo" src="{% static 'img/thoughtspot_new/18.png'%}"></div>
+                                <div class="logo" style="opacity: 1;"><img alt="Marketo Logo" src="{% static 'img/thoughtspot_new/19.png'%}"></div>
+                                <div class="logo" style="opacity: 1;"><img alt="Zendesk Logo" src="{% static 'img/thoughtspot_new/20.png'%}"></div>
+                            </div>
+                        </div>
+                        <div class="videos">
+                            
+                            <span  style="display:inline;position:relative" id="wistia-rii2q5cu4t-1">
+                                <div id="" class="" style="position: relative; display: inline;">
+                                    <a>
+                                        <img class="" src="{% static 'img/thoughtspot_new/Dashboard_2.png'%}" alt="Product page" style="margin-top:50px">
+                                    </a>
+                                </div>
+                            </span>
+                        </div>
+                        <div class="product_hero_logos right initialized" style="transform: translateX(-125px);">
+                            <div class="first_row">
+                                <div class="logo" style="opacity: 1;"><img alt="Zendesk Logo" src="{% static 'img/thoughtspot_new/20.png'%}"></div>
+                                <div class="logo" style="opacity: 1;"><img alt="Salesforce Logo" src="{% static 'img/thoughtspot_new/19.png'%}"></div>
+                                <div class="logo" style="opacity: 1;"><img alt="IBM Logo" src="{% static 'img/thoughtspot_new/18.png'%}"></div>
+                                <div class="logo" style="opacity: 0.583334;"><img alt="Logo Logo" src="{% static 'img/thoughtspot_new/17.png'%}"></div>
+                                <div class="logo" style="opacity: -0.416666;"><img alt="Marketo Logo" src="{% static 'img/thoughtspot_new/16.png'%}"></div>
+                            </div>
+                            <div class="second_row">
+                                <div class="logo" style="opacity: 1;"><img alt="Teradata Logo" src="{% static 'img/thoughtspot_new/15.png'%}"></div>
+                                <div class="logo" style="opacity: 1;"><img alt="Twitter Logo" src="{% static 'img/thoughtspot_new/14.png'%}"></div>
+                                <div class="logo" style="opacity: 1;"><img alt="Zendesk Logo" src="{% static 'img/thoughtspot_new/13.png'%}"></div>
+                                <div class="logo" style="opacity: 0.0833337;"><img alt="SAP Logo" src="{% static 'img/thoughtspot_new/12.png'%}"></div>
+                                <div class="logo" style="opacity: -0.916666;"><img alt="SQL Logo" src="{% static 'img/thoughtspot_new/11.png'%}"></div>
+                            </div>
+                            <div class="third_row">
+                                <div class="logo" style="opacity: 1;"><img alt="Marketo Logo" src="{% static 'img/thoughtspot_new/10.png'%}"></div>
+                                <div class="logo" style="opacity: 1;"><img alt="Oracle Logo" src="{% static 'img/thoughtspot_new/9.png'%}"></div>
+                                <div class="logo" style="opacity: 1;"><img alt="Salesforce Logo" src="{% static 'img/thoughtspot_new/8.png'%}"></div>
+                                <div class="logo" style="opacity: 0.583334;"><img alt="Jira Logo" src="{% static 'img/thoughtspot_new/7.png'%}"></div>
+                                <div class="logo" style="opacity: -0.416666;"><img alt="LinkedIn Logo" src="{% static 'img/thoughtspot_new/6.png'%}"></div>
+                            </div>
+                            <div class="fourth_row">
+                                <div class="logo" style="opacity: 1;"><img alt="Facebook Logo" src="{% static 'img/thoughtspot_new/5.png'%}"></div>
+                                <div class="logo" style="opacity: 1;"><img alt="Hadoop Logo" src="{% static 'img/thoughtspot_new/4.png'%}"></div>
+                                <div class="logo" style="opacity: 1;"><img alt="IBM Logo" src="{% static 'img/thoughtspot_new/3.png'%}"></div>
+                                <div class="logo" style="opacity: 0.0833337;"><img alt="AWS Logo" src="{% static 'img/thoughtspot_new/2.png'%}"></div>
+                                <div class="logo" style="opacity: -0.916666;"><img alt="Excel Logo" src="{% static 'img/thoughtspot_new/1.png'%}"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spacer large"></div>
+                </section>
+            </div>
+        </div>
+    </section>
+    <!-- ======= Thoughtspot New ======= -->
+    <!-- ======= App Features Section ======= -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why should I use Afterefx ?</h2>
+                <p>
+                    In order to edge out the rest, as an investor you have to look beyond traditional Market Data. Reach out to us to see how the whales make use of what we call "Public Inside Info" which is nothing but yardsticks to measure the real
+                    value of a company.
+                </p>
+            </div>
+
+            <div class="row no-gutters">
+                <div class="col-xl-7 d-flex align-items-stretch order-2 order-lg-1">
+                    <div class="content d-flex flex-column justify-content-center">
+                        <div class="row">
+                            <div class="col-md-6 icon-box" data-aos="fade-up">
+                                <i class="bx bx-receipt"></i>
+                                <h4>Real-time Data</h4>
+                                <p>We work with Data which is generated in real time so that you stay leaps ahead of the rest</p>
+                            </div>
+                            <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                                <i class="bx bx-cube-alt"></i>
+                                <h4>Intuitive Interface</h4>
+                                <p>Having been traders ourselves, we know how frustating comlicated interfaces can get. We have made our interface sleek and intuitive.</p>
+                            </div>
+                            <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                                <i class="bx bx-images"></i>
+                                <h4>Tailor made for your Tarding Style</h4>
+                                <p>No matter is you are a Long Short Equity trader, a Macro trader, a Risk Premia, stock or sector Specific, or a mix of many, we customise our data needs, so that you dont burn on unnecessary data.</p>
+                            </div>
+                            <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                                <i class="bx bx-shield"></i>
+                                <h4>Diverse Machine Learning Models</h4>
+                                <p>
+                                    From basic Regression and Classification models to Clustering, Factor Analysis, Time Series and Active Learning, we let the power of machine be accessible to you without getting into the technical complexities, instead,
+                                    allowing you to focus of generating Alpha
+                                </p>
+                            </div>
+                            <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+                                <i class="bx bx-atom"></i>
+                                <h4>We handle all Compliances</h4>
+                                <p>We make sure all our Data Sets are free from PII or MNPI. We also adhere to exisiting standards laid by certain institutions like IDSO,SBAI and FTC</p>
+                            </div>
+                            <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+                                <i class="bx bx-id-card"></i>
+                                <h4>Bring your own data</h4>
+                                <p>Have access to proprietory Datasets you want to extract knowledge from? We allow you to plugin your JSONs, APIs or CSVs to enhance your research</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="image col-xl-5 pl-4 pt-2 pb-5 d-flex align-items-stretch justify-content-center order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+                    <img src="{% static 'img/features.jpg'%}" class="img-fluid widthGeneral" alt="">
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End App Features Section -->
+    <!-- ======= Details Section ======= -->
+    <section id="details" class="details">
+        <div class="container">
+
+            <div class="row content">
+                <div class="col-md-5" data-aos="fade-right">
+                    <div class="imgBlock"><img src="{% static 'img/details-1.png'%}" class="img-fluid imgWidth" alt=""></div>
+                </div>
+                <div class="col-md-7 pt-4" data-aos="fade-up">
+                    <div class="v-middle">
+                        <!--<h6>FOR ALL INVESTORS</h6>-->
+                        <h3>Apply relevant Datasets</h3>
+                        <p class="font-italic">Stop spending money and efforts at analysing data which have little bearing on the equity research. Instead let us find for you the most relavent Data for your research so that you find the best investment opportunities</p>
+                        <!--<ul>
+                            <li><i class="icofont-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                            <li><i class="icofont-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                            <li><i class="icofont-check"></i> Iure at voluptas aspernatur dignissimos doloribus repudiandae.</li>
+                            <li><i class="icofont-check"></i> Est ipsa assumenda id facilis nesciunt placeat sed doloribus praesentium.</li>
+                        </ul>
+                        -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="row content">
+                <div class="col-md-5 order-1 order-md-2" data-aos="fade-left">
+                    <div class="text-right"><img src="{% static 'img/details-2.png'%}" class="img-fluid imgWidth" alt=""></div>
+                </div>
+                <div class="col-md-7 pt-5 order-2 order-md-1" data-aos="fade-up">
+                    <div class="v-middle">
+                        <!--<h6>FOR ANALYSTS</h6>-->
+                        <h3>Easy Understandable Visualisation</h3>
+                        <p class="font-italic">
+                            The Alpha starts to become visible once you start combiining multiple Data-sets. We show you these Visualisation in the most intuitive fashion.
+                        </p>
+                        <ul>
+                            <!-- <li><i class="icofont-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                            <li><i class="icofont-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                            <li><i class="icofont-check"></i> Iure at voluptas aspernatur dignissimos doloribus repudiandae.</li>
+                            <li><i class="icofont-check"></i> Est ipsa assumenda id facilis nesciunt placeat sed doloribus praesentium.</li>-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row content">
+                <div class="col-md-5" data-aos="fade-right">
+                    <div class="imgBlock"><img src="{% static 'img/details-3.png'%}" class="img-fluid imgWidth" alt=""></div>
+                </div>
+                <div class="col-md-7 pt-5" data-aos="fade-up">
+                    <div class="v-middle">
+                        <!-- <h6>AI DRIVEN</h6>-->
+                        <h3>Unleash the power of Data Science.</h3>
+                        <p>Data driven forecasting with explainable reasoning, so that you may improve on it using the Human in the Loop approach.</p>
+                        <!--  <ul>
+                            <li><i class="icofont-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                            <li><i class="icofont-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                            <li><i class="icofont-check"></i> Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.</li>
+                        </ul> -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End Details Section -->
+    <!-- ======= Case Study Section ======= -->
+    <section id="casestudy" class="casestudys section-bg">
+        <div class="container">
+            <div class="section-title">
+                <h2>Some Examples</h2>
+                <p>Look at how Alternative Data was critical in making our trading decsions with plenty of confidence .</p>
+            </div>
+            <div class="owl-carousel casestudys-carousel" data-aos="fade-up">
+                <div class="casestudys-wrap">
+                    <div class="casestudys-item">
+                        <div class="cImageBlock">
+                            <img src="{% static 'img/testimonials/testimonials-2.jpg'%} class="casestudys-img" alt="">
+                        </div>
+                        <div class="cContentBlock">
+                            <h3>Sunworks, Inc (SUNW)</h3>
+
+                            <p>
+                                <i class="bx bxs-quote-alt-left quote-icon-left"></i> Hydrogen, fuel-cells and renewables started dominating the narrative. Our Machine Learning models picked up this uptrend based on a cumulation of Technical, Descriptive
+                                and Fundamental Datasets.
+                                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="casestudys-wrap">
+                    <div class="casestudys-item">
+                        <div class="cImageBlock">
+                            <img src="{% static 'img/testimonials/testimonials-3.jpg'%}" class="casestudys-img" alt="">
+                        </div>
+                        <div class="cContentBlock">
+                            <h3>Canopy Growth Corporation (CGC)</h3>
+
+                            <p>
+                                <i class="bx bxs-quote-alt-left quote-icon-left"></i> The Buzz around weed stocks grew as we spotted a significant sentiment rise in volume. Right from the outset, when over 15 states started legalising adult use for
+                                recreational cannabis, in order to boost revenue, we were succesful in spotting this massive growing interest early.
+                                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="casestudys-wrap">
+                    <div class="casestudys-item">
+                        <div class="cImageBlock">
+                            <img src="{% static 'img/testimonials/testimonials-4.jpg'%}" class="casestudys-img" alt="">
+                        </div>
+                        <div class="cContentBlock">
+                            <h3>Niu Technologies (NIU)</h3>
+                            <p>
+                                <i class="bx bxs-quote-alt-left quote-icon-left"></i> Much before the announement of 40% YOY growth, we analysed KPIs amongst the competition, and concluded NIU was edging others both in performance and in sentiments.
+                                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="casestudys-wrap">
+                    <div class="casestudys-item">
+                        <div class="cImageBlock">
+                            <img src="{% static 'img/testimonials/testimonials-1.jpg'%}" class="casestudys-img" alt="">
+                        </div>
+                        <div class="cContentBlock">
+                            <h3>Smith & Wesson Brands Inc. (SWBI)</h3>
+
+                            <p>
+                                <i class="bx bxs-quote-alt-left quote-icon-left"></i> At the start of the Black Lives Matter protest, we found a surge in traffic to Arms store. It was a decisive factor in analysing this sector.
+                                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Case Study Section -->
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <h4 class="contactTitle">Contact</h4>
+                    <div class="contactAddress">
+                        <div class="row">
+                            <div class="col-lg-6 info" data-aos="fade-up">
+                                <i class="bx bx-map"></i>
+                                <h4>Dublin</h4>
+                                <p>Riverside One, Sir John Rogerson’s Quay<br>Dublin, Ireland D02X576</p>
+                            </div>
+                            <div class="col-lg-6 info" data-aos="fade-up" data-aos-delay="100">
+                                <i class="bx bx-map"></i>
+                                <h4>Stockholm</h4>
+                                <p>WeWork Urban Space<br> Malmskillnadsgatan 32 5,<br>Stockholm, Sweden 111 51</p>
+                            </div>
+                            <div class="col-lg-6 info" data-aos="fade-up" data-aos-delay="200">
+                                <i class="bx bx-envelope"></i>
+                                <h4>Email Us</h4>
+                                <p>contact@afterefx.com</p>
+                            </div>
+                            <div class="col-lg-6 info" data-aos="fade-up" data-aos-delay="300">
+                                <i class="bx bx-phone"></i>
+                                <h4>Call Us</h4>
+                                <p>+46 70 604 38 88</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <h4 class="contactTitle">Request Demo</h4>
+                    <form  method="post" role="form" class="contact-email-form" data-aos="fade-up">
+                        <div class="form-group">
+                            <input placeholder="Your Name" type="text" name="name" id="name" class="form-control" onkeypress="return /[a-zA-Z]+/i.test(event.key)" pattern="[a-zA-Z]+" />
+                            <div class="validate"></div>
+                        </div>
+                        <div class="form-group">
+                            <input placeholder="Your Email" type="email" class="form-control" id="email" name="email" />
+                            <div class="validate"></div>
+                        </div>
+                        <div class="form-group">
+                            <input placeholder="Subject" type="text" class="form-control" id="subject" name="subject" />
+                            <div class="validate"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Message" class="form-control" id="message" name="message" rows="5"></textarea>
+                            <div class="validate"></div>
+                        </div>
+
+                        <div class="mb-3">
+                            <div id="rd_loading" style="display: none;" class="error-message">Sending....</div>
+                            <div id="rd_errormessage" style="display: none;" class="error-message">Error occured while snending message.</div>
+                            <div id="rd_successmessage" style="display: none;" class="sent-message">Your message has been sent. Thank you!</div>
+                        </div>
+                        <div class="text-center"><button id="rd_sendmessage" onclick="return requestDemo();" name="btnsendmessage" type="submit">Send Message</button></div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- End Contact Section -->
+
+</main>
+<footer id="footer" style="background-color:#fff;">
+    <div class="footer-newsletter" data-aos="fade-up">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <h4>Join Our Newsletter</h4>
+                    <p>Be the first to know. We send out regular updates</p>
+                    <form action="" method="post">
+                        <input type="email" name="emailnewsletter" id="nlemail">
+                        <input id="nl_sendmessage" name="btnnewsletter" type="submit" onclick="return NewsLetter();" value="Subscribe">
+                        
+                    </form>
+                    <div class="mb-3" style="margin-top:10px">
+                        <div id="nl_loading" style="display: none;" class="error-message">Sending..........</div>
+                        <div id="nl_errormessage" style="display: none;" class="error-message">Error occured while sending message.</div>
+                        <div id="nl_successmessage" style="display: none;" class="sent-message">Your message has been sent successfully. Thank you!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+    
+                <div class="col-lg-3 col-md-6 footer-contact" data-aos="fade-up">
+                    <img src="{% static 'img/grey-outline_gray-N-Orange.png'%}" alt="" class="img-fluid footer-logo" style="height:30px" />
+                    <p>Afterefx is a platform that enables every investor to use Alternative Data to make Alpha.</p>
+                </div>
+    
+                <div class="col-lg-3 col-md-6 footer-links" data-aos="fade-up" data-aos-delay="100">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><i class="bx bx-chevron-right"></i> <a href="{% url 'front-home'%}">Home</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="{% url 'front-about'%}">About Us</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="{% url 'front-home' %}#casestudy">Case Study</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="{% url 'front-home' %}#features">Features</a></li>
+                    </ul>
+                </div>
+    
+                <div class="col-lg-3 col-md-6 footer-links" data-aos="fade-up" data-aos-delay="200">
+                    <h4>Important Links</h4>
+                    <ul>
+                        <li><i class="bx bx-chevron-right"></i> <a href="{% url 'front-login' %}">Login/Signup</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Help & Support</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+    
+                <div class="col-lg-3 col-md-6 footer-links" data-aos="fade-up" data-aos-delay="300">
+                    <h4>Social Links</h4>
+                    <p>Connect with us to get more updates by fllowing our pages.</p>
+                    <div class="social-links mt-3">
+                        <a href="https://twitter.com/afterefxcom" class="twitter"><i class="bx bxl-twitter"></i></a>
+                        <a href="https://www.facebook.com/afterefxcom" class="facebook"><i class="bx bxl-facebook"></i></a>
+                        <a href="https://www.linkedin.com/company/afterefx" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    function requestDemo(){
+        $("#rd_sendmessage").attr("disabled", "disabled");
+        $('#rd_errormessage').hide();
+        $('#rd_successmessage').hide();
+        $('#rd_loading').show();
+        var namedata = document.getElementById('name').value;
+        var emaildata = document.getElementById('email').value;
+        var subjectdata = document.getElementById('subject').value;
+        var messagedata = document.getElementById('message').value;
+        if(namedata.toString().replace(' ','') == '' || emaildata.toString().replace(' ','') == '' || subjectdata.toString().replace(' ','') == ''
+            || messagedata.toString().replace(' ','') == ''){
+            alert('Kindly enter all fields!');
+            $("#rd_sendmessage").removeAttr("disabled");
+            $('#rd_loading').hide();
+            return false;
+        }
+        var pattern = /^[a-zA-Z0-9\-_]+(\.[a-zA-Z0-9\-_]+)*@[a-z0-9]+(\-[a-z0-9]+)*(\.[a-z0-9]+(\-[a-z0-9]+)*)*\.[a-z]{2,4}$/;
+       
+        if (pattern.test(emaildata) == false) {
+           alert("Invalid Email address");
+           $("#rd_sendmessage").removeAttr("disabled");
+           $('#rd_loading').hide();
+           return false;
+       } 
+        $.ajax({
+        url: "/requestDemoapi/" + namedata + "/" + emaildata + "/" + subjectdata + "/" + messagedata,
+        success: function(data){
+            if (data) {
+                $('#rd_loading').hide();
+                $('#rd_successmessage').show();
+                    $('#name').val("");
+                    $('#email').val("");
+                    $('#subject').val("");
+                    $('#message').val("");
+                    $("#rd_sendmessage").removeAttr("disabled");
+                }
+                else {
+                    $('#rd_loading').hide();
+                    $('#rd_errormessage').html("Error occured while snending message.");
+                    $('#rd_errormessage').show();
+                    $("#rd_sendmessage").removeAttr("disabled");
+                    // $("#rd_section").preloader("remove");
+                }
+        },
+        error: function(err){
+            $('#rd_loading').hide();
+            $('#rd_errormessage').html("Error occured while snending message.");
+            $('#rd_errormessage').show();
+            $("#rd_sendmessage").removeAttr("disabled");
+        }
+    
+        });
+        return false;
+    }
+
+    function NewsLetter(){
+        $("#nl_sendmessage").attr("disabled", "disabled");
+        $('#nl_errormessage').hide();
+        $('#nl_successmessage').hide();
+        $('#nl_loading').show();
+        var emaildata = document.getElementById('nlemail').value;
+        if(emaildata.toString().replace(' ','') == ''){
+            alert('Kindly enter email!');
+            $("#nl_sendmessage").removeAttr("disabled");
+            $('#nl_loading').hide();
+            return false;
+        }
+        var pattern = /^[a-zA-Z0-9\-_]+(\.[a-zA-Z0-9\-_]+)*@[a-z0-9]+(\-[a-z0-9]+)*(\.[a-z0-9]+(\-[a-z0-9]+)*)*\.[a-z]{2,4}$/;
+       
+        if (pattern.test(emaildata) == false) {
+           alert("Invalid Email address");
+           $("#nl_sendmessage").removeAttr("disabled");
+           $('#nl_loading').hide();
+           return false;
+       } 
+        
+        $.ajax({
+        url: "/sendnewsletter/" + emaildata,
+        success: function(data){
+            if (data) {
+                $('#nl_loading').hide();
+                    $('#nl_successmessage').show();
+                    $('#nlemail').val("");
+                    $("#nl_sendmessage").removeAttr("disabled");
+                    // $("#rd_section").preloader();
+                }
+                else {
+                    $('#nl_loading').hide();
+                    $('#nl_errormessage').html("Error occured while snending message.");
+                    $('#nl_errormessage').show();
+                    $("#nl_sendmessage").removeAttr("disabled");
+                    // $("#rd_section").preloader("remove");
+                }
+        },
+        error: function(err){
+            $('#nl_loading').hide();
+            $('#nl_errormessage').html("Error occured while snending message.");
+                $('#nl_errormessage').show();
+                $("#nl_sendmessage").removeAttr("disabled");
+        }
+    
+        });
+        return false;
+    }
+</script>
+
+
+
+
+<!-- End #main -->
+
+{% endblock content %}

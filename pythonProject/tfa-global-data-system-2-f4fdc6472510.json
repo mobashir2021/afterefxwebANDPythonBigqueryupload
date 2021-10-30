@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "tfa-global-data-system-2",
+  "private_key_id": "f4fdc64725103167b1bf284ebdea06169f0976a4",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDPpXgk97B2O3xq\nLYm+u4wLe7+7HNdeAX6AWUwZOPERxL7USxQNgkcrHyz+QCrqlxHZa1EAxL2wk84N\nZfUPqkUqVdqOhkZ6CXqNiNzoJlb8BtcBh/F2Yb4Mw5wwXIOLlWU20fGgETLZOxfg\nZ5EV7GWrSHAi69Xo2f585d0xxqOOz7PyfKkwxA2JykVbzQTdvh/rg72XYHzBVfMq\nXtZ7dmoL1k3H3Q2w365+W74UrK/iSSnpSBa5YmOBZNOveIvcDN97FnfHBNixzf0w\neDvFIwX1iCfH7kKioGuF3PrrqYSYJXxsBGq7MNQrrqAnyQctvbbYkyrzR0Troh50\n2wwt2FxZAgMBAAECggEADIV96TzGd1q+9egpFkdY+phLx4zFr/WHG1ZHMH4ui1PB\n7itY2jew8vi+Tdawv9S8TtAZ4mH6zlsbYdN0I62w3gyvUUjnlxRbP42xRI6LUEdZ\nT85S0UCzpTFmicQKarBnmhau62geGNtnZTDZnujSeLG1kWWHULNUlVOHMyk3U7U2\n4tl19wBmkdJD9S4EqF+8wIALggrLqbsF00hMwUBLoHcp1kpsB82Sr3rO+K3/1Dnu\njbSiCrMiceftin3CsMbKI74gCC130bKAnE30mSTbaNU730dJMSe18fTr3eDQJZVK\n17bWjepLtRY4vGlPoJ9E2cLN3kgVNnhGKrT0o+JawQKBgQDtwPKrzVMYchWIlDpl\nmEXoS9x3bcAF4iZyoWYOSRIPcuqLdT/EQCgnp+ZZ1zRo9d6rKdcXkLp4c/ZP3wlD\nMBo6aLBYqPohU0GriFiVg7Av/cfc3/JGRqseFsJqRc/u6WWF4k34RdQKAH0BPrfw\niq0p4jY3Xu1NajhOKCJq4J6jpwKBgQDflQO36s1bjlLwHoFm48KCO1OUy/BrLYWO\nHlcYa5ZOHF4i4FSV/hYzE8VMLRVDq4ZMgQx6ib7nndxpvx6f08E5ovb6bwvAwFdP\nqUDBx5Krn5y/uzaDlfCyYO0aUAps2OQ19FtaT/7jFU2+3pHc/U5h4izH+pK+mGC0\nH28V2LD//wKBgEYoWLO/vBSLnbUW4ICYRZC9ygnn9fEGggfzfpUalNzAMVwDtlRo\nBjFlh0Ddk1ahrxpdF16Z05y1w2pgS3BrImI4AEm5W044Ljm620ELghM3VSHlZ627\nLsWLO8V2YlyCvPWcCRwJJv/okvqqEkdF9MFWQl9mgKoGfST7DOTy8X0jAoGBAKBR\niL4LRr982WnGZgFyFZoukisi5TzlAlw60zb2hmtyGeomM2DuNdrgNVv/A71nM8CN\n1HXVaadJYbAN1BbEz0vV2AURNTs8cB71/TI2OayIoew1gMxv6oztxXZVqHQOPe2W\nTx7+N4V7VCkmDS+KDvdPJ88plKnIN6dQ1uWyYJDfAoGAWqmvWX4ziYtR3bEn5cN+\nQgJzLOoCjT9h2gRIIvIgC3nQpskY/1sUiMQ0PFH3tNjBIHUtBMQcUbgneLVqlK29\nut8zvgMwNUQsypJxiNbNmmY7j9+4Kv4kH1Y6nk9bfZ99GvqB4s96lR4752HTW4rD\nHouXXMVqQD7kXKNN2qXlLF4=\n-----END PRIVATE KEY-----\n",
+  "client_email": "alumnisurveyjson@tfa-global-data-system-2.iam.gserviceaccount.com",
+  "client_id": "107162626012314827140",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/alumnisurveyjson%40tfa-global-data-system-2.iam.gserviceaccount.com"
+}

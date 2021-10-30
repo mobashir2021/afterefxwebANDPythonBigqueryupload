@@ -1,0 +1,15 @@
+{% extends "frontend/dashboardbase.html" %}
+{% load static %}
+    {% load plotly_dash %}
+{% block content %}
+
+<div class="content-wrapper">
+
+    <div class="{% plotly_class name='MyGraph' %} card" style="height: 100%; width: 100%">
+        {% plotly_app name='MyGraph' ratio=0.45 %}
+        </div>
+</div>
+
+
+
+{% endblock content %}
